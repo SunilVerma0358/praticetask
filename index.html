@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex justify-center items-center h-screen">
+        <lottie-player src="./assets/json/brandLogo.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+    </div>
+    <div class="flex justify-center items-center h-screen px-3 sm:px-0">
+        <div class="w-[400px] mx-auto bg-gray-700 rounded-3xl px-3 sm:px-6 py-5 ">
+            <h2 class="text-white text-3xl font-medium text-center mb-3 uppercase">Form validation</h2>
+            <form id="form" class=" flex flex-col ">
+                <input type="text" id="Name" placeholder="Name" class="bg-white outline-none rounded-xl border border-gray-400 py-2 px-4 mt-4 w-full place">
+                <p class="text-red-400 pt-2 font-medium" id="error"></p>
+                <input type="email" id="Email" placeholder="Email" class="bg-white outline-none rounded-xl border border-gray-400 py-2 px-4 mt-4 w-full place">
+                <p class="text-red-400 pt-2 font-medium error" id="errorEmail"></p>
+                <input type="number" id="number" placeholder="Number" class="bg-white outline-none rounded-xl border border-gray-400 py-2 px-4 mt-4 w-full place">
+                <p class="text-red-400 pt-2 font-medium error" id="errorNumber"></p>
+                <div class="flex items-center justify-between bg-white outline-none rounded-xl border border-gray-400 py-2 px-4 mt-4"> <input type="password" id="Password" placeholder="Password" class="outline-none w-full place">
+                    <button id="toggleButton">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
+   </button></div>
+                <p class="text-red-400 pt-2 font-medium error" id="errorPassword"></p>
+                <button class="bg-blue-500 text-white font-bold rounded-xl py-2 px-4 w-full mt-4 hover:bg-blue-700 transition-all duration-300 " id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="./assets/js/app.js">
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>
