@@ -46,14 +46,21 @@ document.getElementById("form").addEventListener("submit", function (e) {
     console.log(Email.value);
     console.log(number.value);
     console.log(Password.value);
-    Name.value = "";
-    Email.value = "";
-    number.value = "";
-    Password.value = "";
+    alert("from submit by user");
+    this.reset();
   }
 });
 document.getElementById("toggleButton").addEventListener("click", function () {
   const type =
     Password.getAttribute("type") === "password" ? "text" : "password";
   Password.setAttribute("type", type);
+});
+document.getElementById("toogle-theme").addEventListener("click", function () {
+  if (document.documentElement.getAttribute("mode") === "light") {
+    document.documentElement.setAttribute("mode", "dark");
+  } else if (document.documentElement.getAttribute("mode") === "dark") {
+    document.documentElement.setAttribute("mode", "orange");
+  } else {
+    document.documentElement.setAttribute("mode", "light");
+  }
 });
